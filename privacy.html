@@ -1,36 +1,69 @@
 <!doctype html><html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Umak SeoMatix Gizlilik</title><meta name="description" content="Umak SeoMatix gizlilik politikası: hangi Google verisine erişilir, nerede saklanır, nasıl silinir."><link rel="stylesheet" href="style.css"></head>
 <body><main>
-<header><div class="logo" aria-hidden="true">U</div><div><b>Umak SeoMatix</b><br><span>Gizlilik Politikası · Son güncelleme: 6 Ekim 2026</span></div></header>
+<header><div class="logo" aria-hidden="true">U</div><div><b>Umak SeoMatix</b><br><span>Gizlilik Politikası · Son güncelleme: 27 Ekim 2026</span></div></header>
 <h1>Gizlilik Politikası</h1>
-<p>Bu politika, Umak SeoMatix uygulamasının ("Panel") Google hesabınızla bağlandığında hangi verilere eriştiğini, bu verileri nasıl kullandığını ve nerede sakladığını açıklar.</p>
-<h2>1. Erişilen Google verileri</h2>
-<ul><li><strong>Google Search Console</strong> (<code>https://www.googleapis.com/auth/webmasters.readonly</code>): erişiminiz olan mülklerin listesi; tıklama, gösterim, tıklama oranı ve ortalama konum verileri (sayfa, sorgu, ülke, cihaz ve tarih kırılımlarında).</li>
-<li><strong>Google Analytics 4</strong> (<code>https://www.googleapis.com/auth/analytics.readonly</code>): erişiminiz olan hesap/mülk listesi; oturum, kullanıcı, kanal, sayfa, etkinlik ve anlık (son 30 dakika) aktif kullanıcı raporları.</li></ul>
-<p>Panel yalnızca okuma izni ister. Google hesabınızda veya mülklerinizde hiçbir değişiklik yapamaz. Adınız, e-postanız, kişileriniz, Gmail ya da Drive içeriğiniz gibi başka verilere erişmez.</p>
-<h2>2. Verinin kullanımı</h2>
-<p>Erişilen veriler yalnızca Panel'in sizin için gösterdiği SEO raporlarını, sağlık denetimini, fırsat listelerini ve işlem günlüğünü üretmek için kullanılır. Veriler reklam, profil çıkarma, yapay zekâ modeli eğitimi veya satış amacıyla kullanılmaz.</p>
-<h2>3. Saklama</h2>
-<ul><li>Panel kullanıcının kendi bilgisayarında çalışır. Google'dan alınan veriler ve türetilen raporlar yalnızca o bilgisayarda, Panel klasöründe saklanır. Geliştiriciye ait bir sunucuya gönderilmez.</li>
-<li>Google erişim/yenileme anahtarları, Panel klasöründe yalnızca bilgisayar kullanıcısının okuyabileceği izinle (<code>secrets/</code>, 0600) tutulur ve Panel arayüzüne geri gönderilmez.</li>
-<li>Kullanıcı raporlarını kendi isteğiyle başkalarıyla paylaşabilir (ör. statik bir rapor bağlantısı). Bu paylaşım kullanıcının kontrolündedir.</li></ul>
-<h2>4. Paylaşım</h2>
-<p>Google kullanıcı verileri üçüncü taraflara aktarılmaz, satılmaz veya kiralanmaz. Yasal zorunluluklar dışında hiçbir kişi veya kurumla paylaşılmaz.</p>
-<h2>5. Erişimi kaldırma ve silme</h2>
-<ul><li>Google hesabınızdan Panel'in erişimini istediğiniz zaman <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> adresinden kaldırabilirsiniz.</li>
-<li>Panel'deki "Bağlantılar" ekranından kimlik dosyalarını silebilir veya bilgisayarınızdaki Panel klasöründeki <code>secrets/</code> ve <code>data-pipeline/raw/api/</code> klasörlerini silerek tüm verileri kaldırabilirsiniz.</li></ul>
-<h2>6. Google API Hizmetleri Kullanıcı Verisi Politikası</h2>
+<p>Bu politika, Umak SeoMatix panelinin ("Panel") Google hesabınızla bağlandığında hangi verilere eriştiğini, bu verileri nasıl kullandığını, nerede ve ne kadar sakladığını ve nasıl silebileceğinizi açıklar.</p>
+<h2>1. Panel nerede çalışır</h2>
+<p>Panel, <a href="https://panel.umak.tr">panel.umak.tr</a> adresinde çalışan bir web uygulamasıdır. Türkiye'deki bir sunucuda barındırılır. Yalnız Umak'ın davet ettiği kişiler, e-posta ve şifreyle giriş yaparak kullanabilir.</p>
+<h2>2. Erişilen Google verileri</h2>
+<ul><li><strong>Google Search Console</strong> (<code>https://www.googleapis.com/auth/webmasters.readonly</code>): erişiminiz olan mülklerin listesi; tıklama, gösterim, tıklama oranı ve ortalama sıra verileri (sayfa, sorgu, ülke, cihaz ve tarih kırılımlarında).</li>
+<li><strong>Google Analytics 4</strong> (<code>https://www.googleapis.com/auth/analytics.readonly</code>): erişiminiz olan hesap ve mülklerin listesi; web veri akışlarının adresi ve önemli etkinlik tanımları; oturum, kullanıcı, kanal, sayfa, giriş sayfası, ülke ve etkinlik raporları; anlık (son 30 dakika) aktif kullanıcı raporu.</li></ul>
+<p>Panel yalnız okuma izni ister. Google hesabınızda ya da mülklerinizde hiçbir değişiklik yapamaz. Adınız, e-postanız, kişileriniz, Gmail ya da Drive içeriğiniz gibi başka verilere erişmez.</p>
+<h2>3. Verinin kullanımı</h2>
+<p>Erişilen veriler yalnız Panel'de gösterilen SEO raporlarını, sağlık denetimini, fırsat listelerini, uyarıları ve yapılan işlerin etkisini ölçmek için kullanılır. Veriler:</p>
+<ul><li>reklam, profil çıkarma ya da yeniden pazarlama için kullanılmaz;</li>
+<li>satılmaz, kiralanmaz;</li>
+<li>genel amaçlı yapay zekâ ya da makine öğrenmesi modellerini eğitmek veya geliştirmek için kullanılmaz ve yapay zekâ servislerine gönderilmez.</li></ul>
+<p>Veriler yalnız Panel'in davetli kullanıcılarına gösterilir. Umak ekibi verilere bunun dışında yalnız şu durumlarda bakar:</p>
+<ul><li>sizin izninizle (ör. destek talebinizde);</li>
+<li>güvenlik ya da kötüye kullanım incelemesi için;</li>
+<li>yasal bir zorunluluk olduğunda.</li></ul>
+<h2>4. Saklama</h2>
+<ul><li>Google'dan alınan veriler ve türetilen raporlar Panel'in Türkiye'deki sunucusunda saklanır.</li>
+<li>Google erişim ve yenileme anahtarları sunucuda yalnız sunucu hesabının okuyabildiği dosyalarda (izin 0600) tutulur ve tarayıcıya gönderilmez.</li>
+<li>Tarayıcı ile Panel arasındaki iletişim şifrelidir (HTTPS).</li>
+<li>Sunucudaki veriler her gün yedeklenir. Günlük yedekler 14 gün, haftalık yedekler 8 hafta tutulur, sonra silinir.</li></ul>
+<h2>5. Paylaşım</h2>
+<p>Google kullanıcı verileri satılmaz ve kiralanmaz. Veriler yalnız şu durumlarda başkasına ulaşır:</p>
+<ul><li><strong>Hizmet sağlayıcıları:</strong>
+<ul><li>sunucu barındırma: Türkiye;</li>
+<li>Cloudflare: panel.umak.tr trafiğinin iletimi ve korunması; IP adresi ve istek bilgileri.</li></ul></li>
+<li><strong>Kullanıcının kendi paylaşımı:</strong> müşteriye verilen, yalnız o sitenin raporunu gösteren şifreli paylaşım bağlantısı.</li>
+<li><strong>Yasal zorunluluk.</strong></li></ul>
+<h2>6. Çerezler</h2>
+<p>Panel yalnız oturumunuzu açık tutan zorunlu bir çerez kullanır (<code>seomatix_oturum</code>, 7 gün). Ekran tercihleri tarayıcınızın yerel deposunda tutulur. Reklam, izleme ya da analitik çerezi kullanılmaz; üçüncü taraf betiği yüklenmez.</p>
+<h2>7. Erişimi kaldırma ve silme</h2>
+<ul><li>Panel'in Google hesabınıza erişimini istediğiniz zaman <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> adresinden kaldırabilirsiniz. Kaldırıldıktan sonra Panel yeni veri çekemez.</li>
+<li>Google anahtarlarınızın ve verilerinizin silinmesini aşağıdaki adresten e-postayla isteyebilirsiniz. Talep 30 gün içinde yerine getirilir: anahtarlar ve veriler sunucudan silinir, yedeklerden de yedek süresi dolunca (en çok 8 hafta) çıkar.</li></ul>
+<h2>8. Google API Hizmetleri Kullanıcı Verisi Politikası</h2>
 <p>Umak SeoMatix'in Google API'lerinden aldığı bilgileri kullanımı ve başka uygulamalara aktarımı, Sınırlı Kullanım (Limited Use) gereklilikleri dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verisi Politikası</a>'na uygundur.</p>
-<h2>7. İletişim</h2>
+<h2>9. Değişiklikler</h2>
+<p>Bu politika değiştiğinde sayfanın başındaki tarih güncellenir. Önemli değişiklikler Panel kullanıcılarına bildirilir.</p>
+<h2>10. İletişim</h2>
 <p><a href="mailto:mehmettalikose@gmail.com">mehmettalikose@gmail.com</a></p>
 
 <div class="card" id="en" lang="en"><h2 style="margin-top:0">Privacy Policy (English)</h2>
-<p><strong>Data accessed.</strong> When you connect your Google account, Umak SeoMatix ("the Panel") requests read-only access to Google Search Console (<code>webmasters.readonly</code>: property list and search performance data — clicks, impressions, CTR, position by page, query, country, device and date) and Google Analytics 4 (<code>analytics.readonly</code>: account/property list, sessions, users, channels, pages, events and realtime active users). It cannot modify, delete or publish anything in your Google account and does not access any other Google data.</p>
-<p><strong>Use.</strong> Data is used only to build the SEO reports, health checks, opportunity lists and change log the Panel shows you. It is not used for advertising, profiling, training AI models, or sold.</p>
-<p><strong>Storage.</strong> The Panel runs locally on the user's own computer. Google data, derived reports and OAuth tokens are stored only on that computer (tokens in a <code>secrets/</code> folder readable only by the computer user) and are never sent to servers operated by the developer. Users may choose to share their own reports.</p>
-<p><strong>Sharing.</strong> Google user data is not transferred, sold or rented to third parties, except where required by law.</p>
-<p><strong>Revoking and deletion.</strong> Revoke access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; delete credentials from the Panel's Connections screen, or delete the <code>secrets/</code> and <code>data-pipeline/raw/api/</code> folders to remove all data.</p>
-<p><strong>Limited Use.</strong> Umak SeoMatix's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<p><em>Last updated: 27 October 2026</em></p>
+<p><strong>Where the Panel runs.</strong> Umak SeoMatix ("the Panel") is a web application at <a href="https://panel.umak.tr">panel.umak.tr</a>, hosted on a server in Türkiye. Only people invited by Umak can sign in, with an email address and password.</p>
+<p><strong>Data accessed.</strong> When you connect your Google account, the Panel requests read-only access to:</p>
+<ul><li><strong>Google Search Console</strong> (<code>webmasters.readonly</code>): property list and search performance data (clicks, impressions, CTR and position by page, query, country, device and date).</li>
+<li><strong>Google Analytics 4</strong> (<code>analytics.readonly</code>): account and property list, web stream URLs, key event definitions, and reports on sessions, users, channels, pages, landing pages, countries, events and realtime active users.</li></ul>
+<p>It cannot modify, delete or publish anything in your Google account and does not access any other Google data.</p>
+<p><strong>Use.</strong> Data is used only to build the SEO reports, health checks, opportunity lists, alerts and work-impact measurements shown in the Panel. It is never:</p>
+<ul><li>used for advertising, profiling or retargeting;</li>
+<li>sold or rented;</li>
+<li>used to train or improve generalized AI/ML models, or sent to AI services.</li></ul>
+<p>Data is shown only to the Panel's invited users. Umak staff access it otherwise only with your consent, for security or abuse investigations, or when required by law.</p>
+<p><strong>Storage.</strong> Google data and derived reports are stored on the Panel's server in Türkiye. OAuth tokens are kept in files readable only by the server account (permission 0600) and are never sent to the browser. Traffic between your browser and the Panel is encrypted (HTTPS). Server data is backed up daily; daily backups are kept for 14 days and weekly backups for 8 weeks.</p>
+<p><strong>Sharing.</strong> Google user data is not sold or rented. It reaches others only in these cases:</p>
+<ul><li>our hosting provider in Türkiye;</li>
+<li>Cloudflare, which delivers and protects traffic to panel.umak.tr (IP addresses and request data);</li>
+<li>password-protected report links that a Panel user chooses to share with a client;</li>
+<li>when required by law.</li></ul>
+<p><strong>Cookies.</strong> One strictly necessary session cookie (<code>seomatix_oturum</code>, 7 days); no advertising, tracking or analytics cookies.</p>
+<p><strong>Revoking and deletion.</strong> Revoke the Panel's access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. To have your tokens and data deleted, email us; requests are fulfilled within 30 days, and backups expire within 8 weeks.</p>
+<p><strong>Limited Use.</strong> Umak SeoMatix's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 <p><strong>Contact:</strong> <a href="mailto:mehmettalikose@gmail.com">mehmettalikose@gmail.com</a></p></div>
 <nav><a href="index.html">Ana sayfa / Home</a></nav>
 </main></body></html>
